@@ -10,7 +10,10 @@ URI 는 요청된 URL에서 http, 호스트명, port 번호 등을 뺀 나머지라고 생각하면 된다
 --%>
 
 <%-- 
-
+쿠키와 세션의 차이점
+웹페이지 운영에 필요한 정보를 개인PC에서 저장 및 관리를 한다면 그 데이터는 쿠키
+                 정보를 서버에서 저장 및 관리를 한다면 그 데이터는 세션
+                 
 --%>
 
 <%@ page language="java" contentType="text/html; charset=EUC-KR"

@@ -9,7 +9,7 @@ response	: 요청에 대한 응답을 담고 있는 객체
 out			: 페이지 내용을 담고 있는 출력 객체
 session		: 세션 정보를 담고있는 객체
 application	: 어플리케이션 context(문맥) 의 모든 페이지가 공유할 데이터를 담고있는 객체	
-pageContext	: 페이지 실행에 필요한 context(문맥) 정버를 담고있는 객체
+pageContext	: 페이지 실행에 필요한 context(문맥) 정보를 담고있는 객체
 page		: jsp 페이지의 서블릿 객체
 config		: jsp 페이지의 서블릿 설정 데이터 초기화 정보 객체
 exception	: jsp 페이지의 예외처리 객체
@@ -20,7 +20,9 @@ jsp 컨테이너는 요청된 HTTP 메시지를 통해 HttpServletRequest 객체 타입의 request 
 
 - 파라메터 구하는 함수
 String getParameter("파라메터 이름") : 이전 페이지의 form 안에 있는 name 목록에 묶여서 전달되는 파라메터 값을 구할 수 있습니다. 
-
+								   jsp 페이지에서는 get, post 두 개의 방식 모두 요청되는 매개변수들에 대해서 
+								   request.getParameter("...")으로 값을 가져올 수 있다.
+								   
 - 웹 브라우저와 웹 서버의 정보를 가져오기 위해서도 사용되는 함수
 String getMethod() : get 방식인지 post 방식인지 리턴
 String getRequestURI() : 요청에 사용된 URL로부터 URI를 리턴
