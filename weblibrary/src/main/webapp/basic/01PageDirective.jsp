@@ -5,10 +5,10 @@ JSP 페이지 디렉티브(Directive)
 형태는 '<%@... %>' 를 취한다. 
 
 1. page 	<%@ page ... %>
-00PageDirective.jsp 페이지에서 별도 설명
+[00PageDirective.jsp] 페이지에서 별도 설명.
 
 2. include	<%@ include ... %>
-00PageDirective.jsp 페이지에서 별도 설명
+[00PageDirective.jsp] 페이지에서 별도 설명.
 
 3. taglib	<%@ taglib ... %>
 
