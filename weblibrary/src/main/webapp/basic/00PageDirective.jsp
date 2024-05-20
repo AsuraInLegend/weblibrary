@@ -1,5 +1,8 @@
 <%-- 
-JSP 페이지 디렉티브(Directive)
+JSP 페이지 디렉티브(Directive). 지시자-1
+--%>
+
+<%-- 
 지시자는 클라이언트의 요청에 jsp 페이지가 실행이 될 때 필요한 정보를 JSP 컨테이너에 알리는 역할을 한다.
 풀이하자면 jsp 페이지에 '이렇게 처리를 하시오'라는 지시를 내리는 것.
 형태는 '<%@... %>' 를 취한다. 
@@ -26,7 +29,7 @@ include '액션태그'의 경우 포함시킬 페이지의 처리결과만을 포함시킨다.
     
 <%@ page import="simpan.spi.common.simpanUtil" %> <!-- simpanUtil 클래스를 jsp 페이지에서 사용하려 한다.  -->
 
-<%@ include file="spiCommonInclude.jsp" %> <!-- 이 라인에 spiCommonInclude.jsp 페이지의 내용을 삽입. 페이지에 있는 함수 호출이 가능함.  -->
+<%@ include file="spiCommonInclude.jsp" %> <!-- 이 라인에 spiCommonInclude.jsp 페이지의 내용을 그대로 삽입. 페이지에 있는 함수 호출이 가능함.  -->
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,3 +1,7 @@
+<%-- 
+표현 언어. Expression Language
+--%>
+
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -9,7 +13,6 @@
 <body>
 <h2>EL 기본 예제 - 상품 목록</h2>
 <hr />
-
 <!--
 페이지 주소
 http://localhost:8081/weblibrary/dev/EL01/productSel.jsp
@@ -33,5 +36,7 @@ EL01.Product 클래스의 객체가 session 안에 product 라는 ID로 저장된다.
 	</select>
 	<input type="submit" value="선택" />
 </form>
+
+
 </body>
 </html>

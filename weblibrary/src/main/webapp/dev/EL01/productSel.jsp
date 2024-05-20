@@ -1,3 +1,7 @@
+<%-- 
+표현 언어. Expression Language
+--%>
+
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -9,7 +13,6 @@
 <body>
 <h2>EL 예제 - 상품선택</h2>
 <hr />
-
 <!-- 
 이 페이지가 호출되는 시점에 session 에는 두 개의 큰 값이 전달된다.
 하나는 EL01.Product 클래스의 객체인 product 이고
@@ -20,7 +23,7 @@
 두번째 product 는 객체이므로 아래와 같은 코드를 사용하여 두 수의 합을 계산할 수 있다. 
 -->
 
-선택한 상품은 : ${param.sel}<br/>
+선택한 상품은 : ${param.sel}<br/> <!-- <%=request.getParameter("sel") %>  -->
 num1 + num2 = ${product.num1 + product.num2 }<br/>
 </body>
 </html>
